@@ -14,17 +14,8 @@
             --whatsapp: #25D366;
             --footer-bg: #1A2F4F;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
-        body {
-            background-color: var(--primary);
-            color: var(--white);
-            line-height: 1.6;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background-color: var(--primary); color: var(--white); line-height: 1.6; }
         header {
             background: linear-gradient(to right, var(--primary), #1A2F4F);
             color: var(--secondary);
@@ -32,287 +23,125 @@
             padding: 2rem 1rem;
             border-bottom: 3px solid var(--secondary);
         }
-        .logo {
-            font-size: 2.8rem;
-            font-weight: 700;
-            letter-spacing: 3px;
-            margin-bottom: 0.5rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-        .slogan {
-            color: var(--light);
-            font-style: italic;
-            font-size: 1.1rem;
-        }
-        .menu-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
+        .logo { font-size: 2.8rem; font-weight: 700; letter-spacing: 3px; margin-bottom: 0.5rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);}
+        .slogan { color: var(--light); font-style: italic; font-size: 1.1rem;}
+        .menu-container { max-width: 1200px; margin: 2rem auto; padding: 1rem;}
         .category-title {
-            text-align: center;
-            margin: 3rem 0 2rem;
-            font-size: 1.8rem;
-            color: var(--secondary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
+            text-align: center; margin: 3rem 0 2rem; font-size: 1.8rem; color: var(--secondary);
+            text-transform: uppercase; letter-spacing: 2px; position: relative;
         }
         .category-title:after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 3px;
-            background: var(--secondary);
-            margin: 0.5rem auto;
+            content: ""; display: block; width: 100px; height: 3px; background: var(--secondary); margin: 0.5rem auto;
         }
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-        }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;}
         .menu-item {
-            background-color: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            transition: all 0.3s;
-            backdrop-filter: blur(5px);
+            background-color: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.3); transition: all 0.3s; backdrop-filter: blur(5px);
         }
         .menu-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            border-color: var(--secondary);
+            transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); border-color: var(--secondary);
         }
-        .item-image {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-bottom: 2px solid var(--secondary);
-        }
-        .item-details {
-            padding: 1.5rem;
-        }
-        .item-name {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-            color: var(--secondary);
-        }
+        .item-image { width: 100%; height: 220px; object-fit: cover; border-bottom: 2px solid var(--secondary);}
+        .item-details { padding: 1.5rem;}
+        .item-name { font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--secondary);}
         .item-type {
-            display: inline-block;
-            background: rgba(212, 175, 55, 0.2);
-            color: var(--light);
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 0.8rem;
-            border: 1px solid var(--secondary);
+            display: inline-block; background: rgba(212, 175, 55, 0.2); color: var(--light);
+            padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-bottom: 0.8rem; border: 1px solid var(--secondary);
         }
-        .item-description {
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-        .item-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .item-price {
-            font-weight: bold;
-            font-size: 1.3rem;
-            color: var(--secondary);
-        }
+        .item-description { color: var(--gray); margin-bottom: 1.5rem; font-size: 0.95rem;}
+        .item-footer { display: flex; justify-content: space-between; align-items: center;}
+        .item-price { font-weight: bold; font-size: 1.3rem; color: var(--secondary);}
         .order-btn {
-            background-color: transparent;
-            color: var(--secondary);
-            border: 2px solid var(--secondary);
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 600;
+            background-color: transparent; color: var(--secondary); border: 2px solid var(--secondary);
+            padding: 0.5rem 1.5rem; border-radius: 50px; cursor: pointer; transition: all 0.3s; font-weight: 600;
         }
-        .order-btn:hover {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
+        .order-btn:hover { background-color: var(--secondary); color: var(--primary);}
         /* Modal */
         .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(10, 26, 47, 0.95);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            animation: fadeIn 0.3s;
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(10, 26, 47, 0.95); z-index: 1000; justify-content: center; align-items: center; animation: fadeIn 0.3s;
         }
-        @keyframes fadeIn {
-            from { opacity: 0;}
-            to { opacity: 1;}
-        }
+        @keyframes fadeIn { from { opacity: 0;} to { opacity: 1;} }
         .modal-content {
             background: linear-gradient(135deg, var(--primary) 80%, var(--secondary) 100%);
-            width: 95%;
-            max-width: 420px;
-            padding: 2.2rem 2rem 2.5rem 2rem;
-            border-radius: 18px;
-            border: 2px solid var(--secondary);
-            box-shadow: 0 5px 25px 0 rgba(0,0,0,0.35);
-            position: relative;
+            width: 95%; max-width: 420px; padding: 2.2rem 2rem 2.5rem 2rem; border-radius: 18px;
+            border: 2px solid var(--secondary); box-shadow: 0 5px 25px 0 rgba(0,0,0,0.35); position: relative;
         }
         .close-modal {
-            color: var(--secondary);
-            position: absolute;
-            top: 18px;
-            right: 24px;
-            font-size: 2.2rem;
-            cursor: pointer;
-            transition: all 0.3s;
+            color: var(--secondary); position: absolute; top: 18px; right: 24px; font-size: 2.2rem;
+            cursor: pointer; transition: all 0.3s;
         }
-        .close-modal:hover {
-            transform: rotate(90deg) scale(1.15);
-        }
+        .close-modal:hover { transform: rotate(90deg) scale(1.15);}
         .modal-title {
-            margin-bottom: 1.1rem;
-            color: var(--secondary);
-            font-size: 1.5rem;
-            text-align: center;
-            font-weight: 700;
+            margin-bottom: 1.1rem; color: var(--secondary); font-size: 1.5rem; text-align: center; font-weight: 700;
         }
-        .form-group {
-            margin-bottom: 1.3rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--light);
+        .order-summary {
+            background: rgba(255,255,255,0.10);
+            color: var(--white);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.08rem;
             font-weight: 500;
-            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+        }
+        .order-summary strong {
+            color: var(--secondary);
+            font-size: 1.09rem;
+        }
+        .order-summary .emoji {
+            font-size: 1.3em;
+            vertical-align: middle;
+            margin-right: 0.25em;
+        }
+        .form-group { margin-bottom: 1.3rem;}
+        .form-group label {
+            display: block; margin-bottom: 0.5rem; color: var(--light); font-weight: 500; letter-spacing: 0.5px;
         }
         .form-group input,
         .form-group textarea {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            background-color: rgba(255,255,255,0.08);
-            border: 1px solid var(--secondary);
-            color: var(--white);
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border-color 0.2s;
+            width: 100%; padding: 0.8rem 1rem; background-color: rgba(255,255,255,0.08);
+            border: 1px solid var(--secondary); color: var(--white); border-radius: 5px; font-size: 1rem; transition: border-color 0.2s;
         }
         .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--light);
-        }
-        .form-group textarea {
-            min-height: 60px;
-            max-height: 120px;
-            resize: vertical;
-        }
-        .error-message {
-            color: #ff6b6b;
-            font-size: 0.85rem;
-            margin-top: 0.3rem;
-            display: none;
-        }
+        .form-group textarea:focus { outline: none; border-color: var(--light);}
+        .form-group textarea { min-height: 60px; max-height: 120px; resize: vertical;}
+        .error-message { color: #ff6b6b; font-size: 0.85rem; margin-top: 0.3rem; display: none;}
         #send-whatsapp {
-            background-color: var(--whatsapp);
-            color: var(--white);
-            border: none;
-            padding: 1rem;
-            width: 100%;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.8rem;
-            margin-top: 1.2rem;
+            background-color: var(--whatsapp); color: var(--white); border: none; padding: 1rem; width: 100%;
+            border-radius: 5px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin-top: 1.2rem;
             box-shadow: 0 2px 6px 0 rgba(37,211,102,0.15);
         }
-        #send-whatsapp:hover {
-            background-color: #128C7E;
-            transform: translateY(-2px) scale(1.03);
+        #send-whatsapp:hover { background-color: #128C7E; transform: translateY(-2px) scale(1.03);}
+        .whatsapp-icon { width: 24px; height: 24px;}
+        /* Thank you message */
+        #thankYouMsg {
+            display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:2000;
+            background:rgba(10,26,47,0.93); color:#fff; align-items:center; justify-content:center;
+            font-size:2rem; font-weight:600; text-align:center; flex-direction:column;
         }
-        .whatsapp-icon {
-            width: 24px;
-            height: 24px;
-        }
+        #thankYouMsg .big { color:#D4AF37;font-size:2.2rem; margin-bottom:1rem;}
+        #thankYouMsg .small { font-size:1.2rem; color:#F5E6C8;}
         @media (max-width: 768px) {
-            .menu-grid {
-                grid-template-columns: 1fr;
-            }
-            .logo {
-                font-size: 2.2rem;
-            }
-            .slogan {
-                font-size: 1rem;
-            }
-            .modal-content {
-                padding: 1.3rem 0.7rem 1.5rem 0.7rem;
-            }
+            .menu-grid { grid-template-columns: 1fr;}
+            .logo { font-size: 2.2rem;}
+            .slogan { font-size: 1rem;}
+            .modal-content { padding: 1.3rem 0.7rem 1.5rem 0.7rem;}
         }
         /* Creative Footer */
         footer {
             background: linear-gradient(90deg, var(--footer-bg) 60%, var(--secondary) 100%);
-            color: var(--white);
-            font-size: 1rem;
-            padding: 2.5rem 0 1.2rem 0;
-            margin-top: 3.5rem;
-            border-top: 3px solid var(--secondary);
-            position: relative;
-            text-align: center;
+            color: var(--white); font-size: 1rem; padding: 2.5rem 0 1.2rem 0; margin-top: 3.5rem;
+            border-top: 3px solid var(--secondary); position: relative; text-align: center;
         }
-        .footer-content {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.15rem;
-            letter-spacing: 0.5px;
-            line-height: 1.7;
-        }
-        .footer-logo {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--secondary);
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-        .footer-slogan {
-            color: var(--light);
-            font-style: italic;
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            display: block;
-        }
-        .footer-bar {
-            margin: 1.2rem auto 0.5rem auto;
-            width: 80px;
-            height: 4px;
-            border-radius: 4px;
-            background: var(--secondary);
-        }
-        .footer-icons {
-            margin-top: 0.8rem;
-        }
-        .footer-icons img {
-            width: 30px;
-            margin: 0 10px;
-            vertical-align: middle;
-            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
-            transition: transform 0.2s;
-        }
-        .footer-icons img:hover {
-            transform: scale(1.18) rotate(-10deg);
-        }
+        .footer-content { max-width: 700px; margin: 0 auto; font-size: 1.15rem; letter-spacing: 0.5px; line-height: 1.7;}
+        .footer-logo { font-size: 1.6rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem; display: inline-block;}
+        .footer-slogan { color: var(--light); font-style: italic; font-size: 1rem; margin-bottom: 0.8rem; display: block;}
+        .footer-bar { margin: 1.2rem auto 0.5rem auto; width: 80px; height: 4px; border-radius: 4px; background: var(--secondary);}
+        .footer-icons { margin-top: 0.8rem;}
+        .footer-icons img { width: 30px; margin: 0 10px; vertical-align: middle; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12)); transition: transform 0.2s;}
+        .footer-icons img:hover { transform: scale(1.18) rotate(-10deg);}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -451,6 +280,7 @@
         <div class="modal-content">
             <span class="close-modal" id="closeModal">&times;</span>
             <div class="modal-title" id="modalTitle">Ordina</div>
+            <div class="order-summary" id="orderSummary" style="display:none;"></div>
             <form id="orderForm" autocomplete="off">
                 <div class="form-group">
                     <label for="customerName">Nome <span style="color:#ff6b6b">*</span></label>
@@ -474,6 +304,10 @@
             </form>
         </div>
     </div>
+    <div id="thankYouMsg">
+        <span class="big">Grazie per aver scelto Bar Dozza! 🥂</span>
+        <span class="small">Il tuo ordine è in arrivo.</span>
+    </div>
     <footer>
         <div class="footer-content">
             <span class="footer-logo">BAR DOZZA</span>
@@ -490,11 +324,12 @@
     </footer>
     <script>
         // WhatsApp number del locale (sostituire con quello reale)
-        const whatsappNumber = "3440301412";
+        const whatsappNumber = "391234567890";
         // Gestione modale
         const orderModal = document.getElementById('orderModal');
         const closeModal = document.getElementById('closeModal');
         const orderForm = document.getElementById('orderForm');
+        const orderSummary = document.getElementById('orderSummary');
         let selectedItem = '';
         let selectedPrice = '';
         document.querySelectorAll('.order-btn').forEach(btn => {
@@ -504,6 +339,12 @@
                 document.getElementById('modalTitle').innerText = "Ordina: " + selectedItem + " (" + selectedPrice + "€)";
                 document.getElementById('orderItem').value = selectedItem;
                 document.getElementById('orderPrice').value = selectedPrice;
+                // Riepilogo bello
+                orderSummary.style.display = "block";
+                orderSummary.innerHTML = `
+                    <span class="emoji">📝</span> <strong>Riepilogo ordine:</strong><br>
+                    <span class="emoji">🍹</span> <strong>Prodotto:</strong> ${selectedItem} <strong>(${selectedPrice}€)</strong>
+                `;
                 orderModal.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
             });
@@ -512,6 +353,7 @@
             orderModal.style.display = 'none';
             document.body.style.overflow = '';
             orderForm.reset();
+            orderSummary.style.display = "none";
             document.getElementById('nameError').style.display = 'none';
             document.getElementById('tableError').style.display = 'none';
         }
@@ -520,6 +362,7 @@
                 orderModal.style.display = 'none';
                 document.body.style.overflow = '';
                 orderForm.reset();
+                orderSummary.style.display = "none";
                 document.getElementById('nameError').style.display = 'none';
                 document.getElementById('tableError').style.display = 'none';
             }
@@ -544,18 +387,29 @@
                 document.getElementById('tableError').style.display = 'none';
             }
             if (!valid) return;
-            // Componi messaggio WhatsApp
+            // Componi messaggio WhatsApp con emoji e grassetto (markdown WhatsApp)
             const item = document.getElementById('orderItem').value;
             const price = document.getElementById('orderPrice').value;
-            let msg = `Nuovo Ordine \n- ${item} (€${price})\nNome: ${name}\nTavolo: ${table}`;
+            let msg = `📝 *Nuovo Ordine*\n` +
+                      `🍹 *Prodotto:* *${item}* (*${price}€*)\n` +
+                      `👤 *Nome:* *${name}*\n` +
+                      `🪑 *Tavolo:* *${table}*`;
             if (notes) {
-                msg += `\nNote: ${notes}`;
+                msg += `\n📝 *Note:* _${notes}_`;
             }
-            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
-            window.open(url, '_blank');
+            msg += `\n\nGrazie per aver scelto Bar Dozza! 🥂`;
+            // Mostra messaggio di ringraziamento
             orderModal.style.display = 'none';
             document.body.style.overflow = '';
             orderForm.reset();
+            orderSummary.style.display = "none";
+            document.getElementById('thankYouMsg').style.display = 'flex';
+            setTimeout(() => {
+                document.getElementById('thankYouMsg').style.display = 'none';
+            }, 3500);
+            // Apri WhatsApp
+            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
         }
     </script>
 </body>
